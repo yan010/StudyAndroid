@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我是TextView我是TextView我是TextView我是TextView我是TextView我是TextView我是TextView我是TextView我是TextView我是TextView"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/et_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="我是默认文案"
+        android:inputType="textPassword"
+        android:textColorHint="#95A1AA" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="点我有惊喜"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/audio_stop_red" />
+
+    <!--    <CheckBox-->
+    <!--    android:id="@+id/checkbox"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="@drawable/checkbox_bg"-->
+    <!--        android:button="@null" />-->
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:checked="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--系统提供的水平进度条-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="18" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="30" />
+
+</LinearLayout>

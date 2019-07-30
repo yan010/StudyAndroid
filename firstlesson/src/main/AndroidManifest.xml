@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yanqi.firstlesson">
+
+    <application android:allowBackup="true">
+        <activity android:name="com.yanqi.firstlesson.java.JavaActivity"></activity>
+        <activity android:name=".layout.LayoutActivity"></activity>
+        <activity android:name=".widget.WidgetActivity"></activity>
+    </application>
+</manifest>
