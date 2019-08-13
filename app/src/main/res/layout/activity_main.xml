@@ -35,4 +35,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_android_layout" />
 
+    <Button
+        android:id="@+id/btn_android_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AndroidListView控件"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_android_widget" />
+    <Button
+        android:id="@+id/btn_android_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AndroidRecyclerView控件"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_android_list_view" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

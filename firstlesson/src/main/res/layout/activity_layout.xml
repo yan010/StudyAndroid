@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:background="#123123"
             android:orientation="horizontal">
             <!-- 当 android:orientation="vertical" 时，
             只有水平方向的设置才起作用，垂直方向的设置不起作用。
@@ -24,7 +25,7 @@
                即：top，bottom，center_vertical 是生效的。-->
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="left|bottom"
                 android:background="@color/colorPrimaryDark"
@@ -33,7 +34,7 @@
                 android:textColor="#fff" />
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@color/colorAccent"
@@ -42,7 +43,7 @@
                 android:textColor="#fff" />
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="right|top"
                 android:background="@color/colorPrimary"
@@ -85,6 +86,7 @@
             android:id="@+id/tv_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="我是水平居中的置顶文字" />
 
@@ -105,7 +107,6 @@
             android:id="@+id/tv_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:text="我是垂直居中的居左文字" />
 
@@ -114,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/tv_left"
             android:layout_alignLeft="@+id/tv_center"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:text="我是above且左对齐居中文字的" />
 
         <TextView
@@ -180,6 +181,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我才是真的居中"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -217,7 +219,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="这是置顶居中但是偏移20%的文字"
-            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

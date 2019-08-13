@@ -14,9 +14,11 @@ import com.yanqi.firstlesson.java.JavaActivity;
 import com.yanqi.firstlesson.java.Rd;
 import com.yanqi.firstlesson.layout.LayoutActivity;
 import com.yanqi.firstlesson.widget.WidgetActivity;
+import com.yanqi.secondlesson.listview.ListViewActivity;
+import com.yanqi.secondlesson.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView javaTv, layoutTv, widgetTv;
+    private TextView javaTv, layoutTv, widgetTv, listViewTv, recyclerViewTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         javaTv = findViewById(R.id.btn_java);
         layoutTv = findViewById(R.id.btn_android_layout);
         widgetTv = findViewById(R.id.btn_android_widget);
+        listViewTv = findViewById(R.id.btn_android_list_view);
+        recyclerViewTv = findViewById(R.id.btn_android_recycler_view);
         javaTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +47,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, WidgetActivity.class);
+                startActivity(intent);
+            }
+        });
+        listViewTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        recyclerViewTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
             }
         });

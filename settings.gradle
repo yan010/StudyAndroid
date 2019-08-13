@@ -1,2 +1,2 @@
-include ':app', ':firstlesson'
+include ':app', ':firstlesson', ':secondlesson'
 rootProject.name='StudyAndroid'

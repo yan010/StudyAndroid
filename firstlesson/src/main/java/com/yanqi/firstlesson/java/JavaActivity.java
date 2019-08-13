@@ -26,7 +26,7 @@ public class JavaActivity extends Activity {
         rdTv.setText("androidRd说：" + androidRd.code("aa"));
         Rd clientRd = new ClientRd(false);
         rdTv2.setText("clientRd说：" + clientRd.code("aaa"));
-        Rd rd3 = new Rd(false);
+        Rd rd3 = new Rd(false,true);
         rdTv3.setText("Rd说：" + rd3.code("aaa"));
     }
 }

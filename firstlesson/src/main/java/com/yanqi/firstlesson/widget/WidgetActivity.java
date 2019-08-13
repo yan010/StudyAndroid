@@ -44,6 +44,8 @@ public class WidgetActivity extends Activity {
         mTvTextView = findViewById(R.id.tv_textview);
         spannableTextView();
         clickTextView();
+        TextView mText = new TextView(this);
+
 
         //editView相关
         mEditText = findViewById(R.id.et_edit_text);

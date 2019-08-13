@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yanqi.secondlesson">
+
+    <application>
+        <activity android:name=".recyclerview.RecyclerViewActivity"></activity>
+        <activity
+            android:name=".listview.ListViewActivity"
+            android:label="@string/title_activity_list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
